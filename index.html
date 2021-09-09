@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTWorld Remastered</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+     </style>
+</head>
+<body>
+     <div id="mainlogo">
+        <img src="img/gtlogo.svg" alt="GTLogo" class="logo" >
+    </div>
+<!-- 3 Big Buttons -->
+    <div id="bigbtn">
+        <a href="threebigicons.html" class="otg">
+            <img src="img/otgimg.svg" alt="onthego" class="otgimg">
+            <br>
+            <span class="otgtext1"> On the go</span>
+            <br>
+            <span class="otgtext2">Quick cash, super fast transfers and tracking</span>
+        </a>
+
+        <a href="threebigicons.html" class="banking">
+            <img src="img/banking.svg" alt="banking" class="bankingimg">
+            <br>
+            <span class="bankingtext1">Banking</span>
+            <br>
+            <span class="bankingtext2">Balance, transfers, recent transactions from here</span>
+            <br>
+            <span class="bankingtext3"> Login Required</span>
+        </a>
+
+        <a href="threebigicons.html" class="selfservice">
+            <img src="img/selfservice.svg" alt="selfservice" class="selfserviceimg">
+            <br>
+            <span class="selfservicetext1">Self Service</span>  
+            <br>
+            <span class="selfservicetext2">Cards, Statements, iRequire, call GTConnect.</span>  
+            <br>  
+            <span class="selfservicetext3">Login Required</span>  
+        </a>
+    </div> -->
+
+     <div class="5btns">
+         <a href="#" class="quickbalance">
+            <span class="quickbalanceimg"><img src="img/quickbalance.svg" alt="quickbalance" ></span>
+            <span class="quickbalancetext1">Quick Balance</span>
+         </a>
+
+         <a href="#" class="quicktransfer">
+            <span class="quicktransferimg"><img src="img/quicktransfer.svg" alt="quicktransfer"></span>
+            <span class="quicktransfertext1">Quick Transfer</span>
+         </a>
+
+         <a href="#" class="quickairtime">
+            <span class="quickairtimeimg"><img src="img/quickairtime.svg" alt="quickairtime"></span>
+            <span class="quickairtimetext1">Quick Airtime</span>
+         </a>
+
+         <a href="#" class="softtoken">
+            <span class="softtokenimg"><img src="img/softtoken.svg" alt="softtoken"></span>
+            <span class="softtokentext1">Soft Token</span>
+         </a>
+
+         <a href="#" class="accountmanager">
+            <span class="accountmanagerimg"><img src="img/accountmanager.svg" alt="accountmanager"></span>
+            <span class="accountmanagertext1">Account Manager</span>
+         </a>
+
+    </div>
+
+<!-- Open Account -->
+    <a href="#" class="openaccount">
+        <span class="openaccountimg"><img src="img/openaccount.svg" alt="openaccount" ></span>
+        <br>
+        <span class="openaccounttext1">OPEN ACCOUNT</span>
+    </a>
+
+<!-- Sign in GT World -->
+    <div id="signin">
+        <a href="" class="signinbtn">Sign in GTWorld</a>
+    </div>
+    
+<!-- Sign in GAPS Lite -->
+    <div class="gapslite">
+        <a href="" class="gapstext">Sign in GAPS Lite</a>
+    </div>
+
+<!-- Side Navigation Menu -->
+
+    <div id="navicon">
+      <span> 
+       
+    </span>
+    </div>
+
+    <div>
+        <img src="img/nav.svg" alt="nav" id="toggleMenu" onclick="toggleMenu()" >
+    </div>
+
+   <nav id="menu">
+       <ul>
+           <li class="hi">Hi</li>
+           <li><a href="#">Sign Up/Log In</a></li>
+           <li><a href="#">Help</a></li>
+           <li><a href="#">Privacy and Terms</a></li>
+           <li class="an"> <a href="#">Help and FAQs</a></li>
+           <li><a href="#">On the Go</a></li>
+       </ul>
+   </nav>
+</body>
+</html>
+
+
+<script>
+    var toggleStatus = 0;
+    function toggleMenu() {
+        if (toggleStatus == 0) {
+            document.getElementById("menu").style.left = "0px";
+            document.getElementById("toggleMenu").style.left = "275px";
+            toggleStatus = 1;
+        } else if (toggleStatus == 1) {
+            document.getElementById("menu").style.left = "-272px";
+            document.getElementById("toggleMenu").style.left = "30px";
+            toggleStatus = 0;
+        }
+    }
+
+</script>
